@@ -2,18 +2,18 @@
 #include <map>
 using namespace std;
 int main(){
-int arrsize, arr[200000];
+long long arrsize, arr[200000];
 cin>>arrsize;
-map<int,int> freq;
+map<long long,long long> freq;
 long long sum = 0, x;
-for(int i = 0; i < arrsize; i++){
+for(long long i = 0; i < arrsize; i++){
 	cin>>x;
 	arr[i] = x;
 	sum += x;
 	freq[x]++;
 }
-int res[200000], cnt=0, s;
-for(int i = 0 ; i < arrsize; i++){
+long long res[200000], cnt=0, s;
+for(long long i = 0 ; i < arrsize; i++){
 	s = sum - arr[i];
 	
 	if(s % 2 ==0){
@@ -25,7 +25,7 @@ for(int i = 0 ; i < arrsize; i++){
 	}
 }
 cout<<cnt<<endl;
-for(int i = 0; i < cnt; i++)
+for(long long i = 0; i < cnt; i++)
 	cout<<res[i]<<" ";
 
 }
