@@ -5,7 +5,7 @@ int main(){
 int arrsize, arr[200000];
 cin>>arrsize;
 map<int,int> freq;
-int sum = 0, x;
+long long sum = 0, x;
 for(int i = 0; i < arrsize; i++){
 	cin>>x;
 	arr[i] = x;
