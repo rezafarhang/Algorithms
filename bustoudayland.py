@@ -1,4 +1,4 @@
- = int(input())
+n = int(input())
 game = []
 for i in range(n):
     game.append(input())
