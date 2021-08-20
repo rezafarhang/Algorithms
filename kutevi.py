@@ -1,4 +1,5 @@
 import math
+
 n, k = map(int, input().split())
 line = input().split()
 a = 360
